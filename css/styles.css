@@ -10,6 +10,7 @@
   --primary-clr: #10131a;
   --secondary-clr: #2eb2d3;
   --tertiary-clr: #eff0f2;
+  --light-blue-clr: #101e28;
   --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -29,4 +30,286 @@ img {
 input,
 button {
   font: inherit;
+  border: unset;
+  outline: none;
+}
+
+button {
+  border: unset;
+  background-color: var(--secondary-clr);
+  color: var(--tertiary-clr);
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  display: flex;
+  background-color: var(--light-blue-clr);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+  border-radius: 20px;
+  padding: 3px 8px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--tertiary-clr);
+}
+
+.overview {
+  background: var(--primary-clr);
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.overview button {
+  margin: 1rem;
+}
+
+.overview > div {
+  font-size: 2rem;
+}
+
+.emphasis {
+  color: var(--secondary-clr);
+}
+
+section {
+  padding: 5rem;
+}
+
+.my-image {
+  border-radius: 10%;
+  height: 50%;
+  width: 50%;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.services h3 {
+  font-size: 3rem;
+}
+
+.services p {
+  margin-bottom: 1rem;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+article div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid yellow;
+}
+
+.works {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-blue-clr);
+}
+
+.works > div {
+  text-align: center;
+}
+
+.works div p:first-child {
+  font-size: 3rem;
+}
+
+/* About Me Section */
+/* .aboutMe {
+  border: 1px solid green;
+} */
+
+.aboutMe h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.aboutMe > p {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.aboutMe__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.aboutMe__education p:nth-child(2) {
+  color: var(--tertiary-clr);
+}
+.aboutMe__education p:nth-child(3) {
+  color: var(--secondary-clr);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.aboutMe__skills {
+  width: 500px;
+}
+
+.aboutMe__skills ul {
+  list-style: none;
+  display: block;
+}
+
+.aboutMe__skills ul li {
+  padding: 5px;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 0.6rem;
+  border-radius: 20px;
+  display: block;
+}
+
+.aboutMe__skills .figma {
+  width: 30%;
+  background-color: var(--secondary-clr);
+}
+.aboutMe__skills .html {
+  width: 90%;
+  background-color: var(--secondary-clr);
+}
+.aboutMe__skills .css {
+  width: 80%;
+  background-color: var(--secondary-clr);
+}
+.aboutMe__skills .js {
+  width: 50%;
+  background-color: var(--secondary-clr);
+}
+
+/* Projects */
+.projects {
+  text-align: center;
+}
+
+.projects h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects p {
+  margin-bottom: 1rem;
+}
+
+.projects ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+}
+
+.projects ul li {
+  margin-top: 2rem;
+}
+
+.projects ul li a {
+  text-decoration: none;
+  color: var(--tertiary-clr);
+  border: 1px solid var(--secondary-clr);
+  padding: 0.5rem 2rem;
+
+  border-radius: 30px;
+}
+
+.active {
+  background-color: var(--secondary-clr);
+}
+
+/* Articles */
+.articles {
+  text-align: center;
+}
+
+.articles h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+figure {
+  width: 100%;
+}
+
+/* Contact me */
+.contact-me h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+  padding-inline: 20px;
+  padding-block: 30px;
+  background-color: var(--light-blue-clr);
+  text-align: center;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+}
+form input {
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form button {
+  text-align: center;
+  margin: 10px auto;
+}
+
+footer {
+  background-color: var(--light-blue-clr);
+  padding: 2rem;
+  text-align: center;
 }

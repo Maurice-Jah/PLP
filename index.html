@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Portfolio</title>
   </head>
   <body>
@@ -13,7 +11,7 @@
       <h3>logo</h3>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Home</a></li>
           <li><a href="">About Me</a></li>
           <li><a href="">My Blog</a></li>
           <li><a href="">Reviews</a></li>
@@ -24,26 +22,32 @@
     </header>
     <main>
       <section class="overview">
-        <h1>
-          I'm DEVELOPER <br />
-          MAURICE OKEKE
-        </h1>
-        <p>Greetings, fellow digtial . Welcome to my page</p>
+        <div>
+          <h1>
+            I'M <span class="emphasis">DEVELOPER </span> <br />
+            MAURICE OKEKE
+          </h1>
+          <p>Greetings, fellow digtial. Welcome to my page</p>
 
-        <button class="cta">Hire me</button>
-        <img src="images/image-001.jpg" alt="my-pic" />
+          <button class="cta">Hire me</button>
+        </div>
+
+        <img src="images/image-001.jpg" alt="my-pic" loading='lazy'
+        class='my-image' / >
       </section>
       <section class="services">
-        <h3>My Services</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa
-          maiores facere quae minus architecto. Odit perferendis autem harum
-          consectetur.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-          veniam!
-        </p>
+        <div class="text">
+          <h3>My <span class="emphasis">Services</span></h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            culpa maiores facere quae minus architecto. Odit perferendis autem
+            harum consectetur.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+            veniam!
+          </p>
+        </div>
 
         <article>
           <div class="services__001">
@@ -78,27 +82,29 @@
         </div>
       </section>
       <section class="aboutMe">
-        <h3>More About Me</h3>
+        <h3>More <span class="emphasis">About</span> Me</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, est.
         </p>
-        <div class="aboutMe__education">
-          <p>2018 - 2020</p>
-          <p>Diploma Development</p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
-            accusamus!
-          </p>
-        </div>
-        <div class="aboutMe__skills">
-          <p>My Skills</p>
-          <p>Diploma Development</p>
-          <ul>
-            <li>Figma</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
+        <div class="aboutMe__container">
+          <div class="aboutMe__education">
+            <p class="heading">My Education</p>
+            <p>2018 - 2020</p>
+            <p>Diploma Development</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+              accusamus!
+            </p>
+          </div>
+          <div class="aboutMe__skills">
+            <p class="heading">My Skills</p>
+            <ul>
+              <li class="figma">Figma</li>
+              <li class="html">HTML</li>
+              <li class="css">CSS</li>
+              <li class="js">Javascript</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="projects">
@@ -107,7 +113,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, eum.
         </p>
         <ul>
-          <li><a href="#">All</a></li>
+          <li type="button"><a href="#" class="active">All</a></li>
           <li><a href="#">Web Development</a></li>
           <li><a href="#">Frontend</a></li>
           <li><a href="#">UI/UX</a></li>
@@ -116,61 +122,66 @@
         <button class="cta">See More</button>
       </section>
       <section class="articles">
-        <h3>Know More With My Article</h3>
+        <h3>Know More With My <span class="emphasis">Article</span></h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
           obcaecati.
         </p>
+        <div class="article-container">
+          <article>
+            <figure>
+              <img src="" alt="image-px" />
+              <p>How do i develop</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam, hic?
+              </p>
+              <figcaption>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti velit obcaecati veniam?
+              </figcaption>
+            </figure>
+          </article>
 
-        <article>
-          <figure>
-            <img src="" alt="image-px" />
-            <p>How do i develop</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam, hic?
-            </p>
-            <figcaption>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              velit obcaecati veniam?
-            </figcaption>
-          </figure>
-        </article>
-
-        <article>
-          <figure>
-            <img src="" alt="image-px" />
-            <p>How do i develop</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam, hic?
-            </p>
-            <figcaption>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-              velit obcaecati veniam?
-            </figcaption>
-          </figure>
-        </article>
+          <article>
+            <figure>
+              <img src="" alt="image-px" />
+              <p>How do i develop</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam, hic?
+              </p>
+              <figcaption>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti velit obcaecati veniam?
+              </figcaption>
+            </figure>
+          </article>
+        </div>
 
         <button class="btn-cta">See More</button>
       </section>
-      <section class="cta">
+      <section class="contact-me">
+        <h3>Just a Call away</h3>
         <form action="" method="post">
-          <label for="firstname">
-            <input type="text" name="firstname" id="firstname" />
-          </label>
-          <label for="lastname">
-            <input type="text" name="lastname" id="lastname" />
-          </label>
-          <label for="email">
-            <input type="email" name="email" id="email" />
-          </label>
-          <input type="submit" value="Contact Me" />
+          <label for="firstname">Firstname </label>
+          <input type="text" name="firstname" id="firstname" />
+          <br />
+
+          <label for="lastname">Lastname </label>
+          <input type="text" name="lastname" id="lastname" />
+          <br />
+
+          <label for="email">Email </label>
+          <input type="email" name="email" id="email" />
+          <br />
+
+          <button type="submit" class="cta">Contact Me</button>
         </form>
       </section>
     </main>
     <footer>
-      <p>Created by Maurice @2024 &copy;</p>
+      <p>Created by Maurice @2024 &copy; Plp</p>
     </footer>
   </body>
 </html>
